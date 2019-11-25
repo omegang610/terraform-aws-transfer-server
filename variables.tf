@@ -1,11 +1,11 @@
 variable "project" {
   description = "project name"
   type        = string
-  default     = "your_project_name"
+  default     = "my-project"
 }
 
 variable "application" {
-  description = "project name"
+  description = "application name"
   type        = string
   default     = "sftp"
 }

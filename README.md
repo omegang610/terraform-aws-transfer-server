@@ -36,14 +36,14 @@ Examples are in folder [examples](examples)
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| s3\_bucket\_dev | s3 bucket name for dev | string | n/a | yes |
-| s3\_bucket\_prod | s3 bucket name for prod | string | n/a | yes |
-| application | project name | string | `"sftp"` | no |
-| project | project name | string | `"your_project_name"` | no |
-| transfer\_server\_ssh\_key\_dev | SSH publish key for transfer server user | list(string) | `[ "ssh-rsa AAAABXXXXXX", "ssh-rsa AAAABYYYYYY" ]` | no |
-| transfer\_server\_ssh\_key\_prod | SSH publish key for transfer server user | list(string) | `[ "ssh-rsa AAAAB3NAAAAAAAA", "ssh-rsa AAAAB3NBBBBBBBB" ]` | no |
-| transfer\_server\_user\_name\_dev | User name for SFTP server | list(string) | `[ "user1-dev", "user2-dev" ]` | no |
-| transfer\_server\_user\_name\_prod | User name for SFTP server | list(string) | `[ "user1-prod", "user2-prod" ]` | no |
+| application | application name | string | `"sftp"` | no |
+| project | project name | string | `"my-project"` | no |
+| s3\_bucket\_dev | s3 bucket name for dev | string | `""` | no |
+| s3\_bucket\_prod | s3 bucket name for prod | string | `""` | no |
+| transfer\_server\_ssh\_key\_dev | SSH publish key for transfer server user | list(string) | `[]` | no |
+| transfer\_server\_ssh\_key\_prod | SSH publish key for transfer server user | list(string) | `[]` | no |
+| transfer\_server\_user\_name\_dev | User name for SFTP server | list(string) | `[]` | no |
+| transfer\_server\_user\_name\_prod | User name for SFTP server | list(string) | `[]` | no |
 
 ## Outputs
 
